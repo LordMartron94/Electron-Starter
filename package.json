@@ -1,0 +1,20 @@
+{
+  "name": "electron-starter",
+  "version": "1.0.0",
+  "description": "Starter project for Electron JS UI projects.",
+  "main": "index.js",
+  "scripts": {
+    "run": "node electron_starter/components/electron-starter/main.js",
+    "test": "node electron_starter/tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordMartron94/Electron-Starter.git"
+  },
+  "author": "Mr. Hoorn",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/LordMartron94/Electron-Starter/issues"
+  },
+  "homepage": "https://github.com/LordMartron94/Electron-Starter#readme"
+}
