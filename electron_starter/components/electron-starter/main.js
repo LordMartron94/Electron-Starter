@@ -1,12 +1,19 @@
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 800,
-        height: 600
+
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js'),
+            nodeIntegration: false,
+            contextIsolation: true,
+        }
     });
 
-    win.loadFile('electron_starter/components/electron-starter/index.html');
+    // win.loadFile('electron_starter/components/electron-starter/index.html');
+    win.loadURL('http://localhost:5173');
+    win.maximize();
 }
 
 app.whenReady().then(() => {

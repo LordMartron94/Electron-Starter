@@ -4,8 +4,10 @@
   "description": "Starter project for Electron JS UI projects.",
   "main": "electron_starter/components/electron-starter/main.js",
   "scripts": {
+    "start": "concurrently \"npm run start-react\" \"wait-on http://localhost:5173 && electron .\"",
     "run": "electron .",
-    "test": "electron electron_starter/tests/test.js"
+    "test": "electron electron_starter/tests/test.js",
+    "start-react": "vite"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,14 @@
   },
   "homepage": "https://github.com/LordMartron94/Electron-Starter#readme",
   "devDependencies": {
-    "electron": "^34.0.1"
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^34.0.1",
+    "vite": "^6.0.11"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "wait-on": "^8.0.2"
   }
 }
