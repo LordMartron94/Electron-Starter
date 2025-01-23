@@ -2,10 +2,10 @@
   "name": "electron-starter",
   "version": "1.0.0",
   "description": "Starter project for Electron JS UI projects.",
-  "main": "index.js",
+  "main": "electron_starter/components/electron-starter/main.js",
   "scripts": {
-    "run": "node electron_starter/components/electron-starter/main.js",
-    "test": "node electron_starter/tests/test.js"
+    "run": "electron .",
+    "test": "electron electron_starter/tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LordMartron94/Electron-Starter/issues"
   },
-  "homepage": "https://github.com/LordMartron94/Electron-Starter#readme"
+  "homepage": "https://github.com/LordMartron94/Electron-Starter#readme",
+  "devDependencies": {
+    "electron": "^34.0.1"
+  }
 }
